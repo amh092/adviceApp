@@ -4,9 +4,6 @@ import normalize from 'normalize.css'
 import {useState} from 'react'
 function App() {
 
-  const [advice,setAdvice] = useState()
-const [id,setAdviceID] = useState()
-
  function fetchMoviesList(){
    fetch('https://api.adviceslip.com/advice')
    .then((response) => {
